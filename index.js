@@ -1066,13 +1066,11 @@ async function run() {
   } finally {
   }
 }
-
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
   res.send("eCommerce Website is Live Now");
 });
-
 app.listen(port, () => {
   console.log(`eCommerce Website is Live Now${port}`);
 });
